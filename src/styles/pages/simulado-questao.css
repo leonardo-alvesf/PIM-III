@@ -1,3 +1,11 @@
+.questao-progresso {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--texto-secundario);
+    margin-bottom: 14px;
+}
+
+
 .tag-categoria {
     display: inline-block;
     background-color: var(--azul-claro);

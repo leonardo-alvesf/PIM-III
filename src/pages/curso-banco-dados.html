@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,7 @@
 
                     <button type="button" class="aula-item ativa"
                        data-aula="banco-sql-nosql"
-                       onclick="ativarAula(event, \'banco-sql-nosql\')"
+                       onclick="ativarAula(event, 'banco-sql-nosql')"
                        aria-pressed="true">
                         <span class="radio-aula" aria-hidden="true"></span>
                         SQL vs NoSQL
@@ -71,7 +71,7 @@
                      id="painel-banco-sql-nosql" class="painel-aula">
                 <article class="card-conteudo-aula">
 
-                    <h2 class="conteudo-modulo-label">SQL vs NoSQL</h2>
+                    <p class="conteudo-modulo-label">SQL vs NoSQL</p>
 
                     <div class="badge-concluida" id="badge-banco-sql-nosql"
                          style="display: none;">
@@ -84,15 +84,15 @@
                         Aula concluída
                     </div>
 
-                    <h3 class="conteudo-aula-titulo">SQL vs NoSQL</h3>
+                    <h2 class="conteudo-aula-titulo">SQL vs NoSQL</h2>
 
                     <p class="conteudo-texto">
                         Entenda as diferenças entre bancos relacionais e não-relacionais.
                     </p>
 
-                    <h4 class="conteudo-subtitulo">Bancos SQL (Relacionais)</h4>
+                    <h3 class="conteudo-subtitulo">Bancos SQL (Relacionais)</h3>
 
-                    <h5 class="heuristica-titulo">Características:</h5>
+                    <h4 class="heuristica-titulo">Características:</h4>
                     <ul class="conteudo-lista">
                         <li>Estrutura de tabelas com linhas e colunas</li>
                         <li>Schema rígido e predefinido</li>
@@ -100,7 +100,7 @@
                         <li>ACID (Atomicidade, Consistência, Isolamento, Durabilidade)</li>
                     </ul>
 
-                    <h5 class="heuristica-titulo">Quando usar:</h5>
+                    <h4 class="heuristica-titulo">Quando usar:</h4>
                     <ul class="conteudo-lista">
                         <li>Dados estruturados e relacionados</li>
                         <li>Necessidade de transações complexas</li>
@@ -108,14 +108,14 @@
                         <li>Queries complexas com JOINs</li>
                     </ul>
 
-                    <h5 class="heuristica-titulo">Exemplos:</h5>
+                    <h4 class="heuristica-titulo">Exemplos:</h4>
                     <div class="bloco-codigo">
                         <code>MySQL · PostgreSQL · SQL Server · Oracle</code>
                     </div>
 
-                    <h4 class="conteudo-subtitulo">Bancos NoSQL (Não-Relacionais)</h4>
+                    <h3 class="conteudo-subtitulo">Bancos NoSQL (Não-Relacionais)</h3>
 
-                    <h5 class="heuristica-titulo">Características:</h5>
+                    <h4 class="heuristica-titulo">Características:</h4>
                     <ul class="conteudo-lista">
                         <li>Estrutura flexível</li>
                         <li>Schema dinâmico</li>
@@ -123,7 +123,7 @@
                         <li>BASE (Basically Available, Soft state, Eventually consistent)</li>
                     </ul>
 
-                    <h5 class="heuristica-titulo">Tipos:</h5>
+                    <h4 class="heuristica-titulo">Tipos:</h4>
                     <ul class="conteudo-lista">
                         <li><strong>Documento</strong>: MongoDB, CouchDB</li>
                         <li><strong>Chave-Valor</strong>: Redis, DynamoDB</li>
@@ -131,7 +131,7 @@
                         <li><strong>Grafo</strong>: Neo4j, ArangoDB</li>
                     </ul>
 
-                    <h5 class="heuristica-titulo">Quando usar:</h5>
+                    <h4 class="heuristica-titulo">Quando usar:</h4>
                     <ul class="conteudo-lista">
                         <li>Grandes volumes de dados</li>
                         <li>Necessidade de alta escalabilidade</li>
@@ -139,9 +139,9 @@
                         <li>Desenvolvimento ágil com schema flexível</li>
                     </ul>
 
-                    <h4 class="conteudo-subtitulo">Comparação:</h4>
+                    <h3 class="conteudo-subtitulo">Comparação:</h3>
 
-                    <h5 class="heuristica-titulo">Schema</h5>
+                    <h4 class="heuristica-titulo">Schema</h4>
                     <div class="bloco-codigo">
 <code>/* SQL — schema fixo */
 CREATE TABLE usuarios (
@@ -158,13 +158,13 @@ db.usuarios.insertOne({
 });</code>
                     </div>
 
-                    <h5 class="heuristica-titulo">Escalabilidade</h5>
+                    <h4 class="heuristica-titulo">Escalabilidade</h4>
                     <ul class="conteudo-lista">
                         <li><strong>SQL</strong>: escalabilidade vertical (mais CPU/RAM no mesmo servidor)</li>
                         <li><strong>NoSQL</strong>: escalabilidade horizontal (mais servidores em paralelo)</li>
                     </ul>
 
-                    <h5 class="heuristica-titulo">Consistência vs Disponibilidade</h5>
+                    <h4 class="heuristica-titulo">Consistência vs Disponibilidade</h4>
                     <ul class="conteudo-lista">
                         <li><strong>SQL/ACID</strong>: prioriza consistência — dados sempre corretos</li>
                         <li><strong>NoSQL/BASE</strong>: prioriza disponibilidade — eventualmente consistente</li>
@@ -187,7 +187,6 @@ db.usuarios.insertOne({
 
         </main>
 
-        <!-- Barra de navegação — "Cursos" ativo -->
         <nav class="nav-inferior" aria-label="Menu principal">
 
             <a href="home.html">
@@ -234,9 +233,13 @@ db.usuarios.insertOne({
 
         </nav>
 
-        <script src="../scripts/curso-detalhe.js"></script>
+        <script src="../scripts/app.js"></script>
 
     </div>
 
 </body>
 </html>
+
+
+
+

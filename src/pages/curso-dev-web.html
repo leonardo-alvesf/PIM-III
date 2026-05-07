@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -39,13 +39,11 @@
                     Conteúdo do Curso
                 </h2>
 
-                <!-- Módulo único: Fundamentos de Responsividade -->
                 <details class="modulo" open>
                     <summary>
                         <div class="modulo-header">
                             <div>
                                 <h3 class="modulo-nome">Fundamentos de Responsividade</h3>
-                                <!-- progresso atualizado pelo curso-detalhe.js -->
                                 <p class="modulo-progresso">0/1 concluídas</p>
                             </div>
                             <span class="modulo-chevron">
@@ -60,7 +58,7 @@
 
                     <button type="button" class="aula-item ativa"
                        data-aula="dev-web-mobile-first"
-                       onclick="ativarAula(event, \'dev-web-mobile-first\')"
+                       onclick="ativarAula(event, 'dev-web-mobile-first')\"
                        aria-pressed="true">
                         <span class="radio-aula" aria-hidden="true"></span>
                         Mobile-First Design
@@ -69,14 +67,12 @@
 
             </section>
 
-            <!-- Conteúdo da aula -->
             <section 
                      id="painel-dev-web-mobile-first" class="painel-aula">
                 <article class="card-conteudo-aula">
 
-                    <h2 class="conteudo-modulo-label">Mobile-First Design</h2>
+                    <p class="conteudo-modulo-label">Mobile-First Design</p>
 
-                    <!-- Badge de concluída — aparece ao marcar -->
                     <div class="badge-concluida" id="badge-dev-web-mobile-first"
                          style="display: none;">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -88,14 +84,14 @@
                         Aula concluída
                     </div>
 
-                    <h3 class="conteudo-aula-titulo">Mobile-First Design</h3>
+                    <h2 class="conteudo-aula-titulo">Mobile-First Design</h2>
 
                     <p class="conteudo-texto">
                         Mobile-First é uma abordagem onde começamos o design pela versão
                         mobile e expandimos para desktop.
                     </p>
 
-                    <h4 class="conteudo-subtitulo">Por que Mobile-First?</h4>
+                    <h3 class="conteudo-subtitulo">Por que Mobile-First?</h3>
                     <ul class="conteudo-lista">
                         <li>Maioria dos acessos vem de mobile</li>
                         <li>Força priorização de conteúdo</li>
@@ -103,16 +99,14 @@
                         <li>Facilita a progressão para telas maiores</li>
                     </ul>
 
-                    <h4 class="conteudo-subtitulo">Conceitos Importantes:</h4>
+                    <h3 class="conteudo-subtitulo">Conceitos Importantes:</h3>
 
-                    <!-- Viewport -->
-                    <h5 class="heuristica-titulo">Viewport</h5>
+                    <h4 class="heuristica-titulo">Viewport</h4>
                     <div class="bloco-codigo">
                         <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
                     </div>
 
-                    <!-- Media Queries -->
-                    <h5 class="heuristica-titulo">Media Queries</h5>
+                    <h4 class="heuristica-titulo">Media Queries</h4>
                     <div class="bloco-codigo">
 <code>/* Mobile (padrão) */
 .container { width: 100%; }
@@ -128,14 +122,14 @@
 }</code>
                     </div>
 
-                    <h4 class="conteudo-subtitulo">Breakpoints Comuns:</h4>
+                    <h3 class="conteudo-subtitulo">Breakpoints Comuns:</h3>
                     <ul class="conteudo-lista">
                         <li><strong>Mobile</strong>: até 767px</li>
                         <li><strong>Tablet</strong>: 768px – 1023px</li>
                         <li><strong>Desktop</strong>: 1024px+</li>
                     </ul>
 
-                    <h4 class="conteudo-subtitulo">Boas Práticas:</h4>
+                    <h3 class="conteudo-subtitulo">Boas Práticas:</h3>
                     <ul class="conteudo-lista">
                         <li>Comece sempre pela versão mobile</li>
                         <li>Use unidades relativas (%, rem, em)</li>
@@ -161,7 +155,6 @@
 
         </main>
 
-        <!-- Barra de navegação — "Cursos" ativo -->
         <nav class="nav-inferior" aria-label="Menu principal">
 
             <a href="home.html">
@@ -208,9 +201,12 @@
 
         </nav>
 
-        <script src="../scripts/curso-detalhe.js"></script>
+        <script src="../scripts/app.js"></script>
 
     </div>
 
 </body>
 </html>
+
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,6 @@
                             <p class="usuario-nome" id="exibir-nome">Usuário Exemplo</p>
                             <p class="usuario-email" id="exibir-email">userexemplo@email.com</p>
                         </div>
-                        <!-- Botão editar-->
                         <button class="btn-editar" type="button"
                                 id="btn-abrir-edicao" aria-label="Editar perfil">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -48,10 +47,7 @@
                         </button>
                     </div>
 
-                    <!--
-                        MODO EDIÇÃO Mostrado pelo JS ao clicar no botão de editar
-                    -->
-                    <form id="perfil-edit" style="display: none;" onsubmit="return false;" aria-label="Editar dados do perfil">
+                    <form id="perfil-edit" style="display: none;" aria-label="Editar dados do perfil">
 
                         <div class="edit-usuario-resumo">
                             <div class="avatar" aria-hidden="true">
@@ -68,7 +64,6 @@
                             </div>
                         </div>
 
-                        <!-- Campo Nome -->
                         <div class="edit-campo-grupo">
                             <label for="input-nome">Nome</label>
                             <div class="edit-campo-input">
@@ -77,7 +72,6 @@
                             </div>
                         </div>
 
-                        <!-- Campo Email -->
                         <div class="edit-campo-grupo">
                             <label for="input-email">E-mail</label>
                             <div class="edit-campo-input">
@@ -92,11 +86,9 @@
                             </div>
                         </div>
 
-                        <!-- Botões Salvar e Cancelar -->
                         <div class="edit-botoes">
 
                             <button type="button" class="btn-salvar" id="btn-salvar">
-                                <!-- Ícone de salvar-->
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                      aria-hidden="true">
@@ -108,7 +100,6 @@
                             </button>
 
                             <button type="button" class="btn-cancelar-edit" id="btn-cancelar">
-                                <!-- Ícone de cancelar-->
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                      aria-hidden="true">
@@ -141,7 +132,6 @@
                     </a>
                 </div>
 
-                <!-- Botão sair da conta -->
                 <a href="../index.html" class="btn-sair">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -156,7 +146,6 @@
             </section>
         </main>
 
-        <!-- Barra de navegação — "Perfil" ativo -->
         <nav class="nav-inferior" aria-label="Menu principal">
 
             <a href="home.html">
@@ -203,9 +192,11 @@
 
         </nav>
 
-        <script src="../scripts/perfil.js"></script>
+        <script src="../scripts/app.js"></script>
 
     </div>
 
 </body>
 </html>
+
+
